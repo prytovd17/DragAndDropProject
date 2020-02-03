@@ -32,6 +32,7 @@ body {
 	padding-left: 20px;
 	background-clip: padding-box;
 	border-radius: 40px;
+	outline: none;
 }
 
 /*позиционирование кнопки*/
