@@ -52,3 +52,22 @@ body {
 	cursor: pointer; /*курсор на кнопке входа*/
 }
 
+#login-registration {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 116px;
+	color: white;
+	font-size: 15px;
+}
+
+#login-registration:hover {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 116px;
+	color: #5466da;
+	font-size: 15px;
+}
