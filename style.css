@@ -20,7 +20,7 @@ body {
 }
 
 /*позиционирование полей ввода*/
-#login-form input[type="text"],
+#login-form input[type="email"],
 #login-form input[type="password"] {
 	width: 100%;
 	height: 40px;
@@ -49,7 +49,8 @@ body {
 	background-clip: padding-box;
 	border-radius: 10px;
 	background-color: #5466da;
-	cursor: pointer; /*курсор на кнопке входа*/
+	cursor: pointer;
+	outline: none;
 }
 
 #login-registration {
@@ -70,4 +71,89 @@ body {
 	margin-left: 116px;
 	color: #5466da;
 	font-size: 15px;
+}
+
+#registration-form {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -75px;
+}
+
+/*скрываем label*/
+#registration-form label {
+	display: none;
+}
+
+/*позиционирование полей ввода*/
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="password"] {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin-top: 7px;
+	font-size: 14px;
+	color: #444;
+	border: 1px solid rgba(0, 0, 0, .49);
+	padding-left: 20px;
+	background-clip: padding-box;
+	border-radius: 40px;
+	outline: none;
+}
+
+/*позиционирование кнопки*/
+#registration-form input[type="submit"] {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid rgba(0, 0, 0, .49);
+	background-clip: padding-box;
+	border-radius: 10px;
+	background-color: #5466da;
+	cursor: pointer;
+	outline: none;
+}
+
+.lk-head {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 50%;
+	left: -125px;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+}
+
+.side-list {
+	width: 100%;
+	height: 20px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.side-list-a {
+	color: white;
+}
+
+.side-list-a:visited {
+	color: white;
+}
+
+.side-list-a:active {
+	color: white;
+}
+
+.side-list-a {
+	text-decoration: none;
 }
