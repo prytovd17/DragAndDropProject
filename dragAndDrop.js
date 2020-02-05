@@ -1,7 +1,7 @@
 let isDragging = false;
 
 document.addEventListener('mousedown', function(event) {
-    
+
     let dragElement = event.target.closest('.draggable');
 
     if (!dragElement) return;
