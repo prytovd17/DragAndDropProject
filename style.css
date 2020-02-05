@@ -174,115 +174,207 @@ body {
 }
 
 /*стили для конструктора зала*/
-.wrapper {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 50px 1fr;
-	grid-gap: 10px;
-	grid-template-areas:
-	"t t"
-	"h f";
+
+.head-container {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	align-content: center;
 }
 
-.head-text {
-	display: grid;
-	grid-area: t;
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 50px;
-	grid-template-areas:
-	"th tf";
-	font-size: 20px;
-	font-weight: bold;
+.work-container {
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+	margin: 0 -5px;
+	padding: 20px;
+	align-content: center;
+}
+
+.furniture-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	align-content: center;
+}
+
+.head-container div {
+
+}
+
+.work-container div {
+
+}
+
+.furniture-container div {
+
+}
+
+.head-box-1 {
+	flex-grow: 3;
+	text-align: center;
 	color: white;
-}
-
-.head-text-hall {
-	grid-area: th;
-	position: relative;
-	margin: auto;
-}
-
-.head-text-furniture {
-	grid-area: tf;
-	position: relative;
-	margin: auto;
-}
-
-.wrapper-hall {
-	grid-area: h;
-	background-color: burlywood;
-	width: 500px;
-	height: 500px;
-	position: relative;
-	margin: auto;
-}
-
-.wrapper-furniture {
-	display: grid;
-	grid-area: f;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-	"ft"
-	"fs";
-
-	background-color: burlywood;
-	width: 200px;
-	height: 500px;
-	position: relative;
-	margin: auto;
-}
-
-.furniture-table {
-	grid-area: ft;
-	/*background-color: white;*/
-}
-
-.tables-text {
-	position: relative;
-	height: 25px;
-	width: 100px;
-	margin: auto;
-	margin-top: 50px;
-	/*background-color: brown;*/
-	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.tables {
-	position: relative;
-	height: 50px;
-	width: 50px;
-	margin: auto;
-	margin-top: 30px;
-	background-color: black;
-	border-radius: 10px;
-}
-
-.furniture-sofa {
-	grid-area: fs;
-	/*background-color: #5466da;;*/
-}
-
-.sofas-text {
-	position: relative;
-	height: 25px;
-	width: 100px;
-	margin: auto;
-	margin-top: 50px;
-	/*background-color: brown;*/
+.head-box-2 {
+	flex-grow: 1;
 	text-align: center;
+	color: white;
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.sofas {
-	position: relative;
-	height: 50px;
-	width: 100px;
-	margin: auto;
-	margin-top: 30px;
-	background-color: black;
-	border-radius: 10px;
+.work-box-1 {
+	flex-grow: 5;
+	background-color: burlywood;
+	margin: 0 5px;
 }
+
+.work-box-2 {
+	flex-grow: 1;
+	background-color: burlywood;
+	margin: 0 5px;
+	text-align: center;
+	font-weight: bold;
+	/*padding: 10px;*/
+}
+
+.furniture-box-1 {
+	margin-top: 20px;
+}
+
+.furniture-box-2 {
+	margin-top: 40px;
+}
+
+/*.wrapper {*/
+/*	display: grid;*/
+/*	grid-template-columns: 2fr 1fr;*/
+/*	grid-template-rows: 50px 1fr;*/
+/*	grid-gap: 10px;*/
+/*	grid-template-areas:*/
+/*	"t t"*/
+/*	"h f";*/
+/*}*/
+
+/*.head-text {*/
+/*	display: grid;*/
+/*	grid-area: t;*/
+/*	grid-template-columns: 2fr 1fr;*/
+/*	grid-template-rows: 50px;*/
+/*	grid-template-areas:*/
+/*	"th tf";*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*	color: white;*/
+/*}*/
+
+/*.head-text-hall {*/
+/*	grid-area: th;*/
+/*	position: relative;*/
+/*	margin: auto;*/
+/*}*/
+
+/*.head-text-furniture {*/
+/*	grid-area: tf;*/
+/*	position: relative;*/
+/*	margin: auto;*/
+/*}*/
+
+/*.wrapper-hall {*/
+/*	grid-area: h;*/
+/*	background-color: burlywood;*/
+/*	width: 500px;*/
+/*	height: 500px;*/
+/*	position: relative;*/
+/*	margin: auto;*/
+/*}*/
+
+/*.wrapper-furniture {*/
+/*	display: grid;*/
+/*	grid-area: f;*/
+/*	grid-template-columns: 1fr;*/
+/*	grid-template-rows: 1fr 1fr;*/
+/*	grid-template-areas:*/
+/*	"ft"*/
+/*	"fs";*/
+
+/*	background-color: burlywood;*/
+/*	width: 200px;*/
+/*	height: 500px;*/
+/*	position: relative;*/
+/*	margin: auto;*/
+/*}*/
+
+/*.furniture-table {*/
+/*	grid-area: ft;*/
+/*	!*background-color: white;*!*/
+/*}*/
+
+/*.tables-text {*/
+/*	position: relative;*/
+/*	height: 25px;*/
+/*	width: 100px;*/
+/*	margin: auto;*/
+/*	margin-top: 50px;*/
+/*	!*background-color: brown;*!*/
+/*	text-align: center;*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*}*/
+
+/*.tables {*/
+/*	position: relative;*/
+/*	height: 50px;*/
+/*	width: 50px;*/
+/*	margin: auto;*/
+/*	margin-top: 30px;*/
+/*	background-color: black;*/
+/*	border-radius: 10px;*/
+/*	cursor: pointer;*/
+/*}*/
+
+/*.furniture-sofa {*/
+/*	grid-area: fs;*/
+/*	!*background-color: #5466da;;*!*/
+/*}*/
+
+/*.sofas-text {*/
+/*	position: relative;*/
+/*	height: 25px;*/
+/*	width: 100px;*/
+/*	margin: auto;*/
+/*	margin-top: 50px;*/
+/*	!*background-color: brown;*!*/
+/*	text-align: center;*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*}*/
+
+/*.sofas {*/
+/*	position: relative;*/
+/*	height: 50px;*/
+/*	width: 100px;*/
+/*	margin: auto;*/
+/*	margin-top: 30px;*/
+/*	background-color: black;*/
+/*	border-radius: 10px;*/
+/*}*/
+
+
+
+
+/*.hovered {*/
+/*	background-color: red;*/
+/*}*/
+
+/*.hide {*/
+/*	display: none;*/
+/*}*/
+
+/*.draggable {*/
+/*	cursor: pointer;*/
+/*}*/
